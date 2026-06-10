@@ -1,4 +1,4 @@
-# signal-trap-893071
+# signal-trap-6fd6cf
 
 A Rust signal-trap utility.
 
